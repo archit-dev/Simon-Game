@@ -4,20 +4,32 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>Simon-Game</title>
 </head>
 <body>
-    <div class="container">
-        <div class="headings">
 
+    <h1 id="message">Welcome! Press Start to play.</h1>
+
+    <div class="container">
+        <div class="tiles">
+            <div class="tile" id="green"></div>
+            <div class="tile" id="red"></div>
         </div>
         <div class="tiles">
-            
+            <div class="tile" id="yellow"></div>
+            <div class="tile" id="blue"></div>
         </div>
     </div>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/d3js/7.0.0/d3.min.js"></script>
+    <button id="start">Start</button>
+    <div class="score">
+        <label for="best-score">Best Score:</label><h3 id="best-score">0</h3><br>
+        <label for="current-score">Current Score:</label><h3 id="current-score">0</h3>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
